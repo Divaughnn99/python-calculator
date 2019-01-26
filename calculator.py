@@ -5,6 +5,8 @@ symbol = input()
 print("type another number")
 n2 = int(input())
 
+n3 = int(0)
+
 if symbol == 'x':
     n3 = n1 * n2
 else:
@@ -17,11 +19,10 @@ else:
             if symbol == '-':
                 n3 = n1 - n2
             else:
-                # if symbol == '\"%\"':
-                #     n3 = n1 '%' n2
-                # else:
-                if symbol == '%':
-                    n3 = n1 % n2
+                if symbol == "\"%\"":
+                    n3 = (n1/100)*n2
+                else:
+                    if symbol == '%':
+                        n3 = n1 % n2
 
 print("your awnser is", n3)
-    
